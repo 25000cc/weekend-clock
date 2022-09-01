@@ -1,14 +1,26 @@
+@font-face {
+    font-family: digital-number;
+    src: url('fonts/DSEG7Modern-Bold.woff') format('woff');
+    src: url('fonts/DSEG7Modern-Bold.woff2') format('woff2');
+}
+
 body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    background-color: rgb(255, 252, 196);
 }
 
 .timer-container {
     position: absolute;
+    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+#timer {
+    font-family: digital-number;
 }
